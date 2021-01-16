@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>
+        Add to Pantry
+    </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label id="navInput">
+
+    <ion-input placeholder="Enter UPC or Item Name"></ion-input>
+      <ion-button>
+        Add to Pantry
+        <ion-icon icon={navigate}></ion-icon>
+      </ion-button>
+    </ion-label>
+</ion-item>
+
+
+<div className="ion-text-center ion-padding">
+
+<ion-icon icon={barcodeOutline}></ion-icon>
+
+
+</div>
+
+<div  id ="placeholder" className="bar bar-header bar-positive">
+<h1>Or Scan an Item</h1>
+</div>
+
+<div id="placeholder">
+
+This is where the UPC Scanner Integration will go.<div></div>
+
+</div>
+<div className="ion-text-center ion-padding">
+<ion-button routerLink="/viewPantry" size="large">Open Pantry</ion-button>
+<ion-button  routerLink="/recipeBrowser" size="large">View Recipes</ion-button>
+</div>
+
+</ion-content>

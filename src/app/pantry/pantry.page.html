@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+    <ion-label>
+        Pantry Home
+    </ion-label>
+    </ion-item>
+    <div className="ion-text-center ion-padding">
+        <ion-icon id="largeIcon"  name="restaurant-outline"></ion-icon>
+    </div>
+  
+    <div className="ion-text-center ion-padding">
+        <ion-button  routerLink="/viewPantry" size="large">Open Pantry</ion-button>
+        <ion-button  routerLink="/recipeBrowser"size="large">View Recipes</ion-button>
+    </div>
+</ion-content>

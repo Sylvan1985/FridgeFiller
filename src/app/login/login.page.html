@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 class="ion-text-center">
+    Login Page
+ </h1>
+ <ion-item>
+  <ion-label position="floating">UserName/Email</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+ <ion-label position="floating">Password</ion-label>
+ <ion-input></ion-input>
+</ion-item>
+<div class="ion-text-center ion-padding-top">
+<ion-button color="primary">Log in</ion-button>
+<ion-button color="secondary" >Register</ion-button>
+</div>
+<h2 class="ion-text-center ion-padding-top">- or - </h2>
+<div class="ion-text-center ion-padding-top">
+<h1 class="ion-padding-bot">Continue As Guest</h1>
+<ion-button [routerLink]="['/home']" size="large" color="primary">Enter</ion-button>
+</div>
+</ion-content>

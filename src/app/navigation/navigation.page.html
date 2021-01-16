@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label id="navInput">
+        Food Bank Map
+        <ion-input placeholder="Enter Address/zipcode/City"></ion-input>
+        <ion-button>
+            Find Foodbanks
+            <ion-icon icon={navigate}></ion-icon>
+        </ion-button>
+    </ion-label>
+</ion-item>
+<div className="ion-text-center">
+    <ion-icon id="largeIcon" icon={mapOutline} color="medium"></ion-icon>
+</div>
+<div className="ion-padding">Google Maps integration to go here.</div>
+</ion-content>

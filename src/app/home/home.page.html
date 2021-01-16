@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>
+        <ion-input placeholder="Search Recipes"></ion-input>
+    </ion-label>
+</ion-item>
+<ion-card>
+    <ion-item>
+      <ion-label>
+        <h3>Cuisine Type ? </h3>
+        <p>Added : Dec 10, 2019</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-card-header>
+      <ion-card-title>Recipe Name</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Brief description of the recipe. tapping this or the cuisine/added label will open up the recipe.
+    </ion-card-content>
+
+    <ion-footer>
+      <ion-row>
+        <ion-col>
+          <button>
+            <ion-icon  id="mediumIcon" icon={star}></ion-icon>
+            <div>Rating</div>
+          </button>
+        </ion-col>
+        <ion-col >
+          <button>
+            <ion-icon  id="mediumIcon" icon={time}></ion-icon>
+            <div>Time to make?</div>
+          </button>
+        </ion-col>
+        <ion-col >
+          <button>
+            <ion-icon id="mediumIcon" icon={bookmark}></ion-icon>
+            <div>Save Recipe</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-footer>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Fridge Filler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-label>
+        View Pantry
+    </ion-label>
+</ion-item>
+
+<ion-searchbar placeholder="Search Ingredients"></ion-searchbar>
+
+<ion-grid id = "recipeGrid" className="ion-align-self-center" >
+
+  <ion-row >
+    <ion-col size = "2">
+      Ingredient Name
+    </ion-col>
+
+    <ion-col size = "2"> Quantity </ion-col>
+
+    <ion-col size = "2">
+      Date Added
+    </ion-col>
+
+    <ion-col size = "2">
+      Options
+    </ion-col>
+
+
+  </ion-row>
+
+  <ion-row>
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-col size = "2">
+      Item 1
+    </ion-col>
+    <ion-col size = "2"> 1 </ion-col>
+
+    <ion-col size = "2">
+      1/23/2020
+    </ion-col>
+
+    <ion-col size = "2" className= "ion-no-padding">
+      <ion-button size="small">  Remove</ion-button> / <ion-button size="small"> Edit </ion-button>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-col size = "2">
+      Item 2
+    </ion-col>
+
+    <ion-col size = "2"> 3 </ion-col>
+
+    <ion-col size = "2">
+      1/3/2021
+    </ion-col>
+
+    <ion-col size = "2" className= "ion-no-padding">
+      <ion-button size="small" >  Remove</ion-button> / <ion-button size="small"> Edit </ion-button>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+<div  id ="placeholder" className ="bar bar-header bar-positive">
+
+</div>
+<div id="placeholder">
+</div>
+<div className="ion-text-center ion-padding">
+    <ion-button routerLink="/addToPantry" size="large">Add to Pantry</ion-button>
+    <ion-button  routerLink="/recipeBrowser" size="large">Find Recipes</ion-button>
+</div>
+</ion-content>
